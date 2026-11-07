@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2000" height="1800" viewBox="0 0 2000 1800"><rect width="100%" height="100%" fill="#f5f7fb"/>
+<text x="70" y="66" font-family="Consolas, monospace" font-size="38" fill="#23344a">OOP SHOP | CLASS DIAGRAM</text>
+<text x="70" y="100" font-family="Consolas, monospace" font-size="22" fill="#23344a">Simple Python models / attributes and main operations</text>
+<rect x="750" y="130" width="500" height="224" fill="white" stroke="#b8c7d9" stroke-width="2"/>
+<text x="770" y="171" font-family="Consolas, monospace" font-size="29" fill="#145e85">User</text>
+<text x="770" y="199" font-family="Consolas, monospace" font-size="18" fill="#23344a">models/users/user.py</text>
+<polyline points="750,218 1250,218" fill="none" stroke="#b8c7d9" stroke-width="2"/>
+<text x="770" y="249" font-family="Consolas, monospace" font-size="21" fill="#23344a">id: int</text>
+<text x="770" y="279" font-family="Consolas, monospace" font-size="21" fill="#23344a">email: str</text>
+<text x="770" y="309" font-family="Consolas, monospace" font-size="21" fill="#23344a">password: str</text>
+<text x="770" y="339" font-family="Consolas, monospace" font-size="21" fill="#23344a">created_at: datetime</text>
+<rect x="70" y="440" width="500" height="224" fill="white" stroke="#b8c7d9" stroke-width="2"/>
+<text x="90" y="481" font-family="Consolas, monospace" font-size="29" fill="#145e85">Buyer : User</text>
+<text x="90" y="509" font-family="Consolas, monospace" font-size="18" fill="#23344a">models/users/buyer.py</text>
+<polyline points="70,528 570,528" fill="none" stroke="#b8c7d9" stroke-width="2"/>
+<text x="90" y="559" font-family="Consolas, monospace" font-size="21" fill="#23344a">first_name: str</text>
+<text x="90" y="589" font-family="Consolas, monospace" font-size="21" fill="#23344a">last_name: str</text>
+<text x="90" y="619" font-family="Consolas, monospace" font-size="21" fill="#23344a">phone: str</text>
+<text x="90" y="649" font-family="Consolas, monospace" font-size="21" fill="#23344a">address: str</text>
+<rect x="1430" y="440" width="500" height="194" fill="white" stroke="#b8c7d9" stroke-width="2"/>
+<text x="1450" y="481" font-family="Consolas, monospace" font-size="29" fill="#145e85">Seller : User</text>
+<text x="1450" y="509" font-family="Consolas, monospace" font-size="18" fill="#23344a">models/users/seller.py</text>
+<polyline points="1430,528 1930,528" fill="none" stroke="#b8c7d9" stroke-width="2"/>
+<text x="1450" y="559" font-family="Consolas, monospace" font-size="21" fill="#23344a">store_name: str</text>
+<text x="1450" y="589" font-family="Consolas, monospace" font-size="21" fill="#23344a">phone: str</text>
+<text x="1450" y="619" font-family="Consolas, monospace" font-size="21" fill="#23344a">support_email: str</text>
+<rect x="70" y="810" width="500" height="314" fill="white" stroke="#b8c7d9" stroke-width="2"/>
+<text x="90" y="851" font-family="Consolas, monospace" font-size="29" fill="#145e85">Order</text>
+<text x="90" y="879" font-family="Consolas, monospace" font-size="18" fill="#23344a">models/orders/order.py</text>
+<polyline points="70,898 570,898" fill="none" stroke="#b8c7d9" stroke-width="2"/>
+<text x="90" y="929" font-family="Consolas, monospace" font-size="21" fill="#23344a">id: int; buyer: Buyer</text>
+<text x="90" y="959" font-family="Consolas, monospace" font-size="21" fill="#23344a">created_at: datetime; status: str</text>
+<text x="90" y="989" font-family="Consolas, monospace" font-size="21" fill="#23344a">total_price: float (computed)</text>
+<text x="90" y="1019" font-family="Consolas, monospace" font-size="21" fill="#23344a">items: list[OrderItem]</text>
+<text x="90" y="1049" font-family="Consolas, monospace" font-size="21" fill="#23344a">payment: Payment | None</text>
+<text x="90" y="1079" font-family="Consolas, monospace" font-size="21" fill="#23344a">add_item(order_item_obj)</text>
+<text x="90" y="1109" font-family="Consolas, monospace" font-size="21" fill="#23344a">set_payment(payment_obj)</text>
+<rect x="750" y="810" width="500" height="224" fill="white" stroke="#b8c7d9" stroke-width="2"/>
+<text x="770" y="851" font-family="Consolas, monospace" font-size="29" fill="#145e85">OrderItem</text>
+<text x="770" y="879" font-family="Consolas, monospace" font-size="18" fill="#23344a">models/orders/order_item.py</text>
+<polyline points="750,898 1250,898" fill="none" stroke="#b8c7d9" stroke-width="2"/>
+<text x="770" y="929" font-family="Consolas, monospace" font-size="21" fill="#23344a">id: int</text>
+<text x="770" y="959" font-family="Consolas, monospace" font-size="21" fill="#23344a">product: Product</text>
+<text x="770" y="989" font-family="Consolas, monospace" font-size="21" fill="#23344a">quantity: int</text>
+<text x="770" y="1019" font-family="Consolas, monospace" font-size="21" fill="#23344a">unit_price: float</text>
+<rect x="1430" y="810" width="500" height="224" fill="white" stroke="#b8c7d9" stroke-width="2"/>
+<text x="1450" y="851" font-family="Consolas, monospace" font-size="29" fill="#145e85">Product</text>
+<text x="1450" y="879" font-family="Consolas, monospace" font-size="18" fill="#23344a">models/products/product.py</text>
+<polyline points="1430,898 1930,898" fill="none" stroke="#b8c7d9" stroke-width="2"/>
+<text x="1450" y="929" font-family="Consolas, monospace" font-size="21" fill="#23344a">id: int; name: str</text>
+<text x="1450" y="959" font-family="Consolas, monospace" font-size="21" fill="#23344a">price: float; stock: int</text>
+<text x="1450" y="989" font-family="Consolas, monospace" font-size="21" fill="#23344a">category: Category | None</text>
+<text x="1450" y="1019" font-family="Consolas, monospace" font-size="21" fill="#23344a">seller: Seller | None</text>
+<rect x="70" y="1280" width="500" height="224" fill="white" stroke="#b8c7d9" stroke-width="2"/>
+<text x="90" y="1321" font-family="Consolas, monospace" font-size="29" fill="#145e85">Payment</text>
+<text x="90" y="1349" font-family="Consolas, monospace" font-size="18" fill="#23344a">models/payments/payment.py</text>
+<polyline points="70,1368 570,1368" fill="none" stroke="#b8c7d9" stroke-width="2"/>
+<text x="90" y="1399" font-family="Consolas, monospace" font-size="21" fill="#23344a">id: int</text>
+<text x="90" y="1429" font-family="Consolas, monospace" font-size="21" fill="#23344a">amount: float</text>
+<text x="90" y="1459" font-family="Consolas, monospace" font-size="21" fill="#23344a">status: str</text>
+<text x="90" y="1489" font-family="Consolas, monospace" font-size="21" fill="#23344a">gateway: str</text>
+<rect x="1430" y="1280" width="500" height="224" fill="white" stroke="#b8c7d9" stroke-width="2"/>
+<text x="1450" y="1321" font-family="Consolas, monospace" font-size="29" fill="#145e85">Category</text>
+<text x="1450" y="1349" font-family="Consolas, monospace" font-size="18" fill="#23344a">models/products/category.py</text>
+<polyline points="1430,1368 1930,1368" fill="none" stroke="#b8c7d9" stroke-width="2"/>
+<text x="1450" y="1399" font-family="Consolas, monospace" font-size="21" fill="#23344a">id: int</text>
+<text x="1450" y="1429" font-family="Consolas, monospace" font-size="21" fill="#23344a">title: str</text>
+<text x="1450" y="1459" font-family="Consolas, monospace" font-size="21" fill="#23344a">description: str</text>
+<text x="1450" y="1489" font-family="Consolas, monospace" font-size="21" fill="#23344a">products: list</text>
+<polyline points="320,440 320,240 750,240" fill="none" stroke="#53677f" stroke-width="3"/>
+<polygon points="732.0,250.0 750,240 732.0,230.0" fill="#ffffff" stroke="#53677f" stroke-width="3"/>
+<polyline points="1680,440 1680,240 1250,240" fill="none" stroke="#53677f" stroke-width="3"/>
+<polygon points="1268.0,230.0 1250,240 1268.0,250.0" fill="#ffffff" stroke="#53677f" stroke-width="3"/>
+<text x="350" y="223" font-family="Consolas, monospace" font-size="20" fill="#23344a">inherits</text>
+<text x="1320" y="223" font-family="Consolas, monospace" font-size="20" fill="#23344a">inherits</text>
+<polyline points="320,810 320,664" fill="none" stroke="#53677f" stroke-width="3"/>
+<polyline points="330.0,682.0 320,664 310.0,682.0" fill="none" stroke="#53677f" stroke-width="3"/>
+<text x="335" y="717" font-family="Consolas, monospace" font-size="20" fill="#23344a">buyer: 1</text>
+<text x="335" y="772" font-family="Consolas, monospace" font-size="20" fill="#23344a">orders: 0..*</text>
+<polyline points="1680,810 1680,634" fill="none" stroke="#53677f" stroke-width="3"/>
+<polyline points="1690.0,652.0 1680,634 1670.0,652.0" fill="none" stroke="#53677f" stroke-width="3"/>
+<text x="1695" y="699" font-family="Consolas, monospace" font-size="20" fill="#23344a">seller: 0..1</text>
+<text x="1695" y="772" font-family="Consolas, monospace" font-size="20" fill="#23344a">products: 0..*</text>
+<polyline points="570,950 750,950" fill="none" stroke="#53677f" stroke-width="3"/>
+<polygon points="570,950 584.0,958.0 598.0,950.0 584.0,942.0" fill="#53677f" stroke="#53677f" stroke-width="3"/>
+<text x="589" y="912" font-family="Consolas, monospace" font-size="20" fill="#23344a">items</text>
+<text x="622" y="936" font-family="Consolas, monospace" font-size="20" fill="#23344a">0..*</text>
+<polyline points="1250,950 1430,950" fill="none" stroke="#53677f" stroke-width="3"/>
+<polyline points="1412.0,960.0 1430,950 1412.0,940.0" fill="none" stroke="#53677f" stroke-width="3"/>
+<text x="1264" y="912" font-family="Consolas, monospace" font-size="20" fill="#23344a">product</text>
+<text x="1380" y="938" font-family="Consolas, monospace" font-size="20" fill="#23344a">1</text>
+<polyline points="320,1124 320,1280" fill="none" stroke="#53677f" stroke-width="3"/>
+<polygon points="320,1124 312.0,1138.0 320.0,1152.0 328.0,1138.0" fill="#53677f" stroke="#53677f" stroke-width="3"/>
+<text x="338" y="1191" font-family="Consolas, monospace" font-size="20" fill="#23344a">payment: 0..1</text>
+<polyline points="1680,1034 1680,1280" fill="none" stroke="#53677f" stroke-width="3"/>
+<polyline points="1670.0,1262.0 1680,1280 1690.0,1262.0" fill="none" stroke="#53677f" stroke-width="3"/>
+<text x="1695" y="1170" font-family="Consolas, monospace" font-size="20" fill="#23344a">category: 0..1</text>
+<text x="1695" y="1200" font-family="Consolas, monospace" font-size="20" fill="#23344a">products: 0..*</text>
+<text x="70" y="1592" font-family="Consolas, monospace" font-size="22" fill="#23344a">LEGEND: hollow triangle = inheritance; arrow = reference; filled diamond = composition intent.</text>
+<text x="70" y="1631" font-family="Consolas, monospace" font-size="21" fill="#23344a">Getters/setters live in classes and use validation. Order.total_price is computed (getter only).</text>
+<text x="70" y="1671" font-family="Consolas, monospace" font-size="21" fill="#23344a">Composition follows Order design; exclusive ownership / automatic deletion is not enforced by Python.</text>
+<text x="70" y="1711" font-family="Consolas, monospace" font-size="21" fill="#23344a">read_products() fills Category.products explicitly while loading the product catalog.</text>
+<text x="70" y="1751" font-family="Consolas, monospace" font-size="21" fill="#23344a">GUI: buyers, products and orders. Files: buyers and products. Orders stay in memory; payment is simulated.</text>
+</svg>
